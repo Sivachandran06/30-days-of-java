@@ -1,0 +1,33 @@
+// Your code here
+
+
+import java.util.*;
+class Main{
+    public static void main(String[]args) {
+      
+        Scanner Sc=new Scanner (System.in);
+      
+        int T=Sc.nextInt();
+        for(int k=0;k<T;k++){
+           int N=Sc.nextInt();
+           int target=Sc.nextInt();
+           int arr[]=new int[N];
+           for(int i=0; i<N; i++){
+               arr[i]=Sc.nextInt();
+           }
+           boolean found = false;
+           for(int j=0;j<N;j++){
+            if(arr[j]==target){
+                found = true;
+                System.out.print(j+" ");                
+            }
+        }
+      if (found == false){
+          System.out.print("Not found");
+      }  
+      System.out.println();
+
+    }
+
+}
+}
